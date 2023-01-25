@@ -1,0 +1,14 @@
+import { createPinia, setActivePinia } from 'pinia'
+import { beforeEach, describe, expect, test } from 'vitest'
+import { use{{pascalCase name}}Store } from './{{camelCase name}}Store'
+
+describe('Test use{{pascalCase name}}Store', () => {
+  beforeEach(() => {
+    setActivePinia(createPinia())
+  })
+
+  test('should be defined', () => {
+    const {{camelCase name}}Store = use{{pascalCase name}}Store()
+    expect({{camelCase name}}Store).toBeDefined()
+  })
+})
