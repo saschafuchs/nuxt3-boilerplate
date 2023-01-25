@@ -1,13 +1,8 @@
 import { describe, it, expect } from 'vitest'
-import { setup } from '@nuxt/test-utils'
 import { mount } from '@vue/test-utils'
 import {{ pascalCase name }} from './{{ pascalCase name }}.vue'
 
-describe('{{ pascalCase name }}.vue', async () => {
-  await setup({
-    // test context options
-  })
-
+describe('{{ pascalCase name }}.vue', () => {
   it('should render', () => {
     const wrapper = mount({{ pascalCase name }})
     expect(wrapper).toBeTruthy()

@@ -39,7 +39,7 @@ export default defineNuxtConfig({
         iso: 'de',
         file: 'de.json',
         name: 'Deutsch'
-      },
+      }
     ],
     defaultLocale: 'en',
     vueI18n: {

@@ -1,6 +1,6 @@
 import { fetch } from 'cross-fetch'
 import { afterAll, afterEach, beforeAll } from 'vitest'
-import { server } from './src/mocks/server'
+import { server } from './mocks/server'
 
 global.fetch = fetch
 
