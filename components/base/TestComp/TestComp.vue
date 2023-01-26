@@ -8,7 +8,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="testComp">
+  <div class="testComp border border-gray-300 rounded p-4">
     testComp {{ msg }}
   </div>
 </template>

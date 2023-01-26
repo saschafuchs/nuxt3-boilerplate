@@ -10,6 +10,7 @@ module.exports = function (plop) {
   const STORE_PATH = './store/'
   const TYPES_PATH = './types/'
   const SCHEMA_PATH = './types/schemas/'
+  const HISTOIRE = true
 
   plop.setWelcomeMessage(
     'Welcome to the Vue3 / Nuxt3 Plop generator! Please select a generator.'
@@ -75,8 +76,8 @@ module.exports = function (plop) {
           return !answers.files.includes('story') ? 'skipped' : null
         },
         type: 'add',
-        path: `${COMPONENT_PATH}{{type}}/{{pascalCase name}}/{{pascalCase name}}.stories.ts`,
-        templateFile: 'plopTemplates/componentStory.hbs',
+        path: HISTOIRE ? `${COMPONENT_PATH}{{type}}/{{pascalCase name}}/{{pascalCase name}}.story.vue` : `${COMPONENT_PATH}{{type}}/{{pascalCase name}}/{{pascalCase name}}.stories.ts`,
+        templateFile: HISTOIRE ? 'plopTemplates/componentStoryHistoire.hbs' : 'plopTemplates/componentStory.hbs',
         skipIfExists: true
       }
     ]

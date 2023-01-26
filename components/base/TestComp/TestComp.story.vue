@@ -6,11 +6,15 @@ const source = `
 `
 </script>
 
+<docs lang="md">
+  Hello this is a docs section
+  </docs>
+
 <template>
   <Story
     :source="source"
     icon="lucide:cpu"
-    :layout="{ type: 'single', iframe: false }"
+    :layout="{ type: 'single', iframe: true }"
     title="Test component story"
   >
     <TestComp />
