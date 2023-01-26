@@ -11,7 +11,7 @@ npx degit saschafuchs/nuxt3-boilerplate . --force
 Then install the packages as usual with `npm i`.
 
 ## MSW 
-Um Requests zu mocken, sei es für die Entwicklung, Unit Tests oder für Storybook, wird der Mock Service Worker verwendet. Dieser ist schon soweit vorbereitet, man muss diesen nur einmal initialieren.
+The Mock Service Worker is used to mock requests, whether for development, unit tests or storybooks. This is already prepared, you only have to initialise it once.
 
 ```bash
 npx msw init public/ --save
